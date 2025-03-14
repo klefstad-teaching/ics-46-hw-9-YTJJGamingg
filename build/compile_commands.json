@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/build",
+  "command": "/usr/bin/g++   -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -std=c++20 -o CMakeFiles/dijkstra_main.dir/src/dijkstras.cpp.o -c /home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/src/dijkstras.cpp",
+  "file": "/home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/src/dijkstras.cpp"
+},
+{
+  "directory": "/home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/build",
+  "command": "/usr/bin/g++   -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -std=c++20 -o CMakeFiles/dijkstra_main.dir/src/dijkstras_main.cpp.o -c /home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/src/dijkstras_main.cpp",
+  "file": "/home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/src/dijkstras_main.cpp"
+},
+{
+  "directory": "/home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/build",
+  "command": "/usr/bin/g++   -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -std=c++20 -o CMakeFiles/ladder_main.dir/src/ladder.cpp.o -c /home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/src/ladder.cpp",
+  "file": "/home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/src/ladder.cpp"
+},
+{
+  "directory": "/home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/build",
+  "command": "/usr/bin/g++   -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -std=c++20 -o CMakeFiles/ladder_main.dir/src/ladder_main.cpp.o -c /home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/src/ladder_main.cpp",
+  "file": "/home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/src/ladder_main.cpp"
+},
+{
+  "directory": "/home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/build",
+  "command": "/usr/bin/g++  -I/home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/src -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -DGTEST_HAS_PTHREAD=1 -std=c++20 -o CMakeFiles/student_gtests.dir/gtest/gtestmain.cpp.o -c /home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/gtest/gtestmain.cpp",
+  "file": "/home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/gtest/gtestmain.cpp"
+},
+{
+  "directory": "/home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/build",
+  "command": "/usr/bin/g++  -I/home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/src -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -DGTEST_HAS_PTHREAD=1 -std=c++20 -o CMakeFiles/student_gtests.dir/gtest/student_gtests.cpp.o -c /home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/gtest/student_gtests.cpp",
+  "file": "/home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/gtest/student_gtests.cpp"
+},
+{
+  "directory": "/home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/build",
+  "command": "/usr/bin/g++  -I/home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/src -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -DGTEST_HAS_PTHREAD=1 -std=c++20 -o CMakeFiles/student_gtests.dir/src/dijkstras.cpp.o -c /home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/src/dijkstras.cpp",
+  "file": "/home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/src/dijkstras.cpp"
+},
+{
+  "directory": "/home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/build",
+  "command": "/usr/bin/g++  -I/home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/src -Wall -Wextra -Wpedantic -Wfatal-errors -Werror=vla -ggdb -fsanitize=address,undefined -fsanitize-recover=all -g -DGTEST_HAS_PTHREAD=1 -std=c++20 -o CMakeFiles/student_gtests.dir/src/ladder.cpp.o -c /home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/src/ladder.cpp",
+  "file": "/home/jgacs/ICS46/HW9/ics-46-hw-9-YTJJGamingg/src/ladder.cpp"
+}
+]
