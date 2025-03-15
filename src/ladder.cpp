@@ -41,32 +41,32 @@ bool is_adjacent(const string& word1, const string& word2) {
     
 
 bool edit_distance_within(const std::string& str1, const std::string& str2, int d) {
-    int len1 = str1.length(), len2 = str2.length();
-    if (abs(len1 - len2) > d) return false;
+    int len1 = str1.length();
+    int len2 = str2.length();
 
-    int distance = 0;
-    int i = 0, j = 0;
-    while (i < len1 && j < len2) {
-        if (str1[i] != str2[j]) {
-            distance++;
-            if (distance > d) return false;
-            
-            if (len1 > len2) {
-                i++;
-            } else if (len1 < len2) {
-                j++;
-            } else {
-                i++;
-                j++;
-            }
-        } else {
-            i++;
-            j++;
+    if (abs(len1 - len2) > d) return false;
+    vector<vector<int>> dp(len1 + 1, vector<int>(len2 + 1));
+    for (int i = 0; i <= len1; ++i) {
+        dp[i][0] = i;
+    }
+    for (int j = 0; j <= len2; ++j) {
+        dp[0][j] = j;
+    }
+    for (int i = 1; i <= len1; ++i) {
+        for (int j = 1; j <= len2; ++j) {
+            int cost = (str1[i - 1] == str2[j - 1]) ? 0 : 1;
+
+            dp[i][j] = min({
+                dp[i - 1][j] + 1,
+                dp[i][j - 1] + 1,
+                dp[i - 1][j - 1] + cost
+            });
         }
     }
-    distance += abs(len1 - len2);
-    return distance <= d;
+    return dp[len1][len2] <= d;
 }
+
+
 
 
 void load_words(set<string>& word_list, const string& file_name) {
