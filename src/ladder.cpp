@@ -43,14 +43,28 @@ bool is_adjacent(const string& word1, const string& word2) {
 bool edit_distance_within(const std::string& str1, const std::string& str2, int d) {
     int len1 = str1.length(), len2 = str2.length();
     if (abs(len1 - len2) > d) return false;
-    int distance = 0, i = 0, j = 0;
+
+    int distance = 0;
+    int i = 0, j = 0;
     while (i < len1 && j < len2) {
-        if (str1[i++] != str2[j++]) {
-            if (++distance > d) return false;
+        if (str1[i] != str2[j]) {
+            distance++;
+            if (distance > d) return false;
+            
+            if (len1 > len2) {
+                i++;
+            } else if (len1 < len2) {
+                j++;
+            } else {
+                i++;
+                j++;
+            }
+        } else {
+            i++;
+            j++;
         }
     }
-
-    distance += abs(len1- len2);
+    distance += abs(len1 - len2);
     return distance <= d;
 }
 
