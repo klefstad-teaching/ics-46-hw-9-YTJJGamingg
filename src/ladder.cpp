@@ -78,10 +78,15 @@ void load_words(set<string>& word_list, const string& file_name) {
 }
 
 void print_word_ladder(const vector<string>& ladder) {
-    for (const string& word : ladder) {
-        cout << word << " ";
+    if (ladder.empty()) {
+        cout << "No word ladder found." << endl;
+    } else {
+        cout << "Word ladder found: ";
+        for (const string& word : ladder) {
+            cout << word << " ";
+        }
+        cout << endl;
     }
-    cout << endl;
 }
 
 vector<string> generate_word_ladder(const string& begin_word, const string& end_word, const set<string>& word_list) {
@@ -89,11 +94,13 @@ vector<string> generate_word_ladder(const string& begin_word, const string& end_
         error(begin_word, end_word, "Start word and end word cannot be the same");
         return {};
     }
+
     queue<vector<string>> ladder_queue;
     set<string> visited;
     
     ladder_queue.push({begin_word});
     visited.insert(begin_word);
+
     while (!ladder_queue.empty()) {
         vector<string> ladder = ladder_queue.front();
         ladder_queue.pop();
@@ -106,7 +113,6 @@ vector<string> generate_word_ladder(const string& begin_word, const string& end_
                 new_ladder.push_back(word);
                 
                 if (word == end_word) {
-                    cout << "Word ladder found: ";
                     print_word_ladder(new_ladder);
                     return new_ladder;
                 }
@@ -116,7 +122,7 @@ vector<string> generate_word_ladder(const string& begin_word, const string& end_
             }
         }
     }
-    cout << "No word ladder found.\n"; 
+    print_word_ladder({});
     return {};
 }
 
