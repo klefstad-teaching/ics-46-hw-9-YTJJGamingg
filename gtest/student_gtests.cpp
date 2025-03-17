@@ -34,3 +34,15 @@ TEST(EditDistanceWithinTest, OneLetterDeletion) {
 TEST(EditDistanceWithinTest, OneLetterReplacement) {
     EXPECT_TRUE(edit_distance_within("apple", "appla", 1));
 }
+
+TEST(WordLadderTest, CatToDog) {
+    set<string> word_list;
+    load_words(word_list, "src/words.txt");
+    EXPECT_EQ(generate_word_ladder("cat", "dog", word_list).size(), 4);
+}
+
+TEST(WordLadderTest, MartyToCurls) {
+    set<string> word_list;
+    load_words(word_list, "src/words.txt");
+    EXPECT_EQ(generate_word_ladder("marty", "curls", word_list).size(), 6);
+}
