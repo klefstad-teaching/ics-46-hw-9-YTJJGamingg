@@ -1,5 +1,7 @@
 #include "ladder.h"
 
+//return edit_distance_within(word1, word2, 1);  this is a slow is_adjacent method (which is weird)
+
 bool is_adjacent(const string& word1, const string& word2) {
     if (word1 == word2) return true;
 
