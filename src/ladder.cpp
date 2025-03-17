@@ -14,7 +14,6 @@ bool is_adjacent(const string& word1, const string& word2) {
     } else if (abs((int)word1.length() - (int)word2.length()) == 1) {
         const string& longer = word1.length() > word2.length() ? word1 : word2;
         const string& shorter = word1.length() > word2.length() ? word2 : word1;
-        
         size_t i = 0, j = 0;
         bool diff_found = false;
         
