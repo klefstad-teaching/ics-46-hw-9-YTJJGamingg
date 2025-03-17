@@ -1,37 +1,7 @@
 #include "ladder.h"
 
 bool is_adjacent(const string& word1, const string& word2) {
-    if (word1 == word2) return true;
-
-    if (word1.length() == word2.length()) {
-        int diff_count = 0;
-        for (size_t i = 0; i < word1.length(); ++i) {
-            if (word1[i] != word2[i]) {
-                diff_count++;
-            }
-        }
-        return diff_count == 1;
-    } else if (abs((int)word1.length() - (int)word2.length()) == 1) {
-        const string& longer = word1.length() > word2.length() ? word1 : word2;
-        const string& shorter = word1.length() > word2.length() ? word2 : word1;
-        size_t i = 0, j = 0;
-        bool diff_found = false;
-        
-        while (i < longer.length() && j < shorter.length()) {
-            if (longer[i] != shorter[j]) {
-                if (diff_found) {
-                    return false;
-                }
-                diff_found = true;
-                i++;
-            } else {
-                i++;
-                j++;
-            }
-        }
-        return true;
-    }
-    return false;
+    return edit_distance_within(word1, word2, 1);
 }
     
 
